@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker RGB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">
+
+  <div class="card shadow-lg rounded-4 p-4" style="max-width: 600px; width: 100%;">
+    <h2 class="text-center mb-4">🎨 RGB Color Picker</h2>
+
+    <!-- Color preview -->
+    <div id="colorPreview" class="rounded-4 mb-4 shadow-sm"></div>
+
+    <!-- Sliders -->
+    <div class="mb-3">
+      <label class="form-label">Rojo</label>
+      <input type="range" id="red" class="form-range" min="0" max="255" value="0">
+      <span id="redVal" class="badge bg-danger"></span>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Verde</label>
+      <input type="range" id="green" class="form-range" min="0" max="255" value="0">
+      <span id="greenVal" class="badge bg-success"></span>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Azul</label>
+      <input type="range" id="blue" class="form-range" min="0" max="255" value="0">
+      <span id="blueVal" class="badge bg-primary"></span>
+    </div>
+
+    <!-- Inputs -->
+    <div class="row g-3 mb-3">
+      <div class="col-md-6">
+        <label class="form-label">RGB (ejemplo: 120,200,255)</label>
+        <input type="text" id="rgbInput" class="form-control" placeholder="R,G,B">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Hexadecimal</label>
+        <input type="text" id="hexInput" class="form-control" placeholder="#000000">
+      </div>
+    </div>
+
+    <!-- Color Picker -->
+<div class="mb-3">
+  <label class="form-label">Vista Previa</label>
+  <input 
+    type="color" 
+    id="colorPicker" 
+    class="form-control form-control-color"
+    style="width: 550px; height: 200px; cursor: pointer;">
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

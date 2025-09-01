@@ -1,0 +1,23 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#colorPreview {
+  height: 150px;
+  border: 2px solid #ddd;
+}
+
+h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-label {
+  font-weight: 500;
+}
+#colorBox {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  transition: background-color 0.5s ease; /* ← Animación suave */
+}
